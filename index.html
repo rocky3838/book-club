@@ -23,6 +23,7 @@
         box-shadow:8px 0px 20px 12px darksalmon; 
         display:flex;
         justify-content:space-between; 
+        grid-area:nav ;
     }
     #intro{
         background-color: rgb(238, 234, 30)
@@ -76,6 +77,32 @@ button{
     box-shadow:8px 0px 20px 12px darksalmon;
     display:flex;
     justify-content: space-between;      
+    }
+    header{
+ grid-area:header;
+ display:flex;
+ align-items: center;
+    }
+    #intro{
+        grid-area:intro;
+    }
+    #main-section{
+ grid-area:main-section ;
+    }
+    #bestsellers{
+        grid-area:bestsellers;
+    }
+    footer{
+        grid-area:footer;
+    }
+    .grid-container{
+    display:grid;
+    grid-template-columns:auto auto auto auto auto ;
+     grid-template-areas:
+     'header header header header  intro'
+     'nav nav nav nav intro' 
+     'main-section main-section main-section main-section bestsellers' 
+     'footer footer footer footer footer';
     }
     
 
